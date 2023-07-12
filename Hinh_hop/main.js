@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import {GUI} from 'dat.gui';
+//import {GUI} from 'dat.gui';
+import * as dat from 'https://unpkg.com/dat.gui@0.7.7/build/dat.gui.module.js';
 
 import {Controller} from '../HelperFunction';
 
@@ -48,7 +49,7 @@ helper.visible=false;
 light.visible = false;
 
 
-var gui = new GUI();
+var gui = new dat.GUI();
 var path_to_texture ='box_texture.jpg';
 gui = Controller(gui, cube, renderer, scene, camera, path_to_texture, plane, light, helper);
 

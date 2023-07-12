@@ -11,7 +11,7 @@
 // }
 
 import * as THREE from 'three';
-import {GUI} from 'dat.gui';
+//import {GUI} from 'dat.gui';
 
 function Controller(gui, object, renderer, scene, camera, path_to_texture, plane, light, helper){
     const Scale={
