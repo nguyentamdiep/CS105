@@ -1,7 +1,8 @@
 import * as THREE from 'three';
-import {GUI} from 'dat.gui';
+//import {GUI} from 'dat.gui';
+import * as dat from 'https://unpkg.com/dat.gui@0.7.7/build/dat.gui.module.js';
 
-import {Controller} from '../HelperFunction';
+import {Controller} from '../HelperFunction.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -41,7 +42,7 @@ light.visible = false;
 
 
 var path_to_texture='cylinder_texture.jpg';
-var gui = new GUI();
+var gui = new dat.GUI();
 gui = Controller(gui, cylinder, renderer, scene, camera, path_to_texture, plane, light, helper);
 
 //scene.add(gui);

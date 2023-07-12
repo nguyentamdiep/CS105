@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import {GUI} from 'dat.gui';
+//import {GUI} from 'dat.gui';
+import * as dat from 'https://unpkg.com/dat.gui@0.7.7/build/dat.gui.module.js';
+import { TeapotGeometry } from './TeapotGeometry.js';
 
-import { TeapotGeometry } from './TeapotGeometry';
-
-import {Controller} from '../HelperFunction';
+import {Controller} from '../HelperFunction.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -48,7 +48,7 @@ light.visible = false;
 
 //console.log('light: ', light.visible);
 
-var gui = new GUI();
+var gui = new dat.GUI();
 
 var path_to_texture='teapot_texture.jpg';
 gui = Controller(gui, teapot, renderer, scene, camera, path_to_texture, plane, light, helper);
