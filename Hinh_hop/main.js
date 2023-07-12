@@ -1,7 +1,5 @@
 import * as THREE from 'three';
-//import {GUI} from 'dat_gui';
-//import * as dat from 'dat_gui';
-//import * as dat from 'https://unpkg.com/dat.gui@0.7.7/build/dat.gui.module.js';
+//import {GUI} from 'dat.gui';
 import * as dat from 'https://unpkg.com/dat.gui@0.7.7/build/dat.gui.module.js';
 
 import {Controller} from '../HelperFunction.js';
